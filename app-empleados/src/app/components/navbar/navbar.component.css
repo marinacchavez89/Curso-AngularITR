@@ -1,0 +1,32 @@
+.example-spacer {
+  flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+} 
+
+.nav-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(247, 236, 236);
+}
+
+.nav-link mat-icon {
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  color: #ad509e;
+}
+
+.nav-link:active {
+  color: #400964;
+}
+
+.navbar{
+  background-color: rgb(212, 174, 243);
+  color: rgb(83, 81, 81);
+  margin-bottom: 50px;
+}

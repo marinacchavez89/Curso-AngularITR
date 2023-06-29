@@ -1,0 +1,47 @@
+*, html {
+    box-sizing: border-box;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width:1290px;
+    height:1000px;
+    margin: auto;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    width: 1290px;
+    height:1000px;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height:1000px;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height:1000px;
+    padding: 20px;
+}
+
+app-table,
+app-card {
+  margin-bottom: 20px;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 25%;
+    height: 1000px;
+}

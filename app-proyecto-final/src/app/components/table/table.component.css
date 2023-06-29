@@ -1,0 +1,6 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    min-height:35%;
+    background-color: #a3748e;
+}

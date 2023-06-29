@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Rol</th>
+            <th>Salario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employeeList; let i=index">
+            <td>{{i + 1}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.role}}</td>
+            <td>${{employee.salary}}</td>
+            
+            <app-goal-employee (goalEmployee)="addGoal($event)"></app-goal-employee>
+            <ul class="goals-list">
+             <li *ngFor="let goal of employee.goals">{{goal}}</li>
+            </ul>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col">
+      <h1 style="text-align: center;">{{title}}</h1>
+    </div>
+    <br><br>
+    <form>
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" class="form-control" required [(ngModel)]="txtName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" class="form-control" required [(ngModel)]="txtLastName">
+      </div>
+      <div class="form-group">
+        <label for="role">Rol:</label>
+        <input type="text" id="role" name="role" class="form-control" required [(ngModel)]="txtRole">
+      </div>
+      <div class="form-group">
+        <label for="salary">Salario:</label>
+        <input type="text" id="salary" name="salary" class="form-control" required [(ngModel)]="txtSalary">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="addEmployee()" (click)="goHome()">Agregar</button>
+    </form>
+  </div>

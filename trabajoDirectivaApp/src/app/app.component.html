@@ -1,0 +1,29 @@
+<h1 style="text-align: center;">{{title}}</h1>
+
+<div class="container">
+  <form>
+    <input type="text" name="name" [(ngModel)]="name" placeholder="Nombre"><br/>
+    <input type="text" name="lastName" [(ngModel)]="lastName" placeholder="Apellido"><br/>
+    <input type="submit" value="Registrarse" (click)="addUser()" class="btn-submit">
+  </form>
+</div>
+
+<br/>
+
+<p style="text-align: center;" *ngIf="registrado; else notRegistered" class="registered">{{message}} con el nombre de {{name}} {{lastName}}</p>
+
+<ng-template #notRegistered>
+  <p style="text-align: center;" class="not-registered">No se encuentra nadie registrado.</p>
+</ng-template>
+
+<br/><br/>
+
+<h1 style="text-align: center;">
+  <a href="https://www.cronista.com/tema/it/">Algunas noticias IT</a>
+</h1>
+
+<ul class="centered-list">
+  <p *ngFor="let entrance of entrances" class="entrance">{{entrance.title}}</p>
+</ul>
+  
+

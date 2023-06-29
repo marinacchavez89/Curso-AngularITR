@@ -1,0 +1,11 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1290px;
+    min-height: 45px;
+}

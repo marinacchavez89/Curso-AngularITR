@@ -1,0 +1,7 @@
+<form>
+    <div class="form-group">
+      <label for="goal">Objetivo:</label>
+      <input type="text" id="goal" name="goal" class="form-control" #newGoal>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="addGoal(newGoal.value)">Agregar Objetivo</button>
+  </form>

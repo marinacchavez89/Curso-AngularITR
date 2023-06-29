@@ -1,0 +1,10 @@
+.card {
+    display: flex;      
+    min-height:65%;
+    flex-wrap: wrap;
+}
+
+.example-card {
+    max-width: 200px;  
+  }  
+ 

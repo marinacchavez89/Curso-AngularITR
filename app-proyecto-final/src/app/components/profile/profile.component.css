@@ -1,0 +1,14 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile {
+    text-align: left;
+}
+
+.profile-image{
+    width: 80px;
+}
